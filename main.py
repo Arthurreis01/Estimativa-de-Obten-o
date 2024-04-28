@@ -7,7 +7,7 @@ st.title("Centro de Suprimentos do Abastecimento")
 st.subheader("Gerência de Suprimentos - VIATURAS")
 
 # Carregando o DataFrame a partir do arquivo Excel
-df = pd.read_excel("C:\\Users\\arthu\\OneDrive\\Área de Trabalho\\VTR.xlsx")
+df = pd.read_excel("VTR.xlsx")
 
 # Gráfico com filtro
 st.sidebar.title("Filtro")
