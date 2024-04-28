@@ -11,7 +11,7 @@ df = pd.read_excel("VTR.xlsx")
 
 # Gráfico com filtro
 st.sidebar.title("Filtro")
-ano_selecionado = st.sidebar.selectbox("Ano", df["Ano"])
+ano_selecionado = st.sidebar.selectbox("Ano", df["Ano"].unique())
 modelos_selecionados = st.sidebar.multiselect("Modelo Viatura", df["Modelo Viatura"].unique(), default=[df["Modelo Viatura"].unique()[0]])
 
 df_filtrado = df[(df["Ano"] == ano_selecionado) & (df["Modelo Viatura"].isin(modelos_selecionados))]
